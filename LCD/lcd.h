@@ -22,7 +22,7 @@
 
 void LCD_Init(void);
 void LCD_Command(u8 command);
-void LCD_SENDSTR(s8* str);
+void LCD_SENDSTR(u8* str);
 
 
 

@@ -1,4 +1,4 @@
-
+#define F_CPU 800000UL
 #include <util/delay.h>
 
 #include "lcd.h"
@@ -39,9 +39,9 @@ void LCD_Init(void)
 
 }
 
-void LCD_SENDSTR(s8* str){
-	s8 i=0 ;
-	while(str[i]!='/0')
+void LCD_SENDSTR(u8* str){
+	u8 i=0 ;
+	while(str[i]!='\0')
 	{
 		LCD_SendChar(str[i]);
 		i++;

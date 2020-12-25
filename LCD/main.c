@@ -5,21 +5,19 @@
  * Author : Elgharib
  */ 
 #include <avr/io.h>
+#define F_CPU 800000UL
 #include <util/delay.h>
-#define F_CPU 800000			
+			
 
 
 #include "lcd.h"
 
-int  main()
+void main()
 {
       LCD_Init();
-      LCD_SENDSTR("Elgharib");
+      LCD_SENDSTR(" Elgharib");
       LCD_Command(0xC0);		/* Go to 2nd line*/
-	LCD_SENDSTR("************");
-
-	  
-      return 0;   
+	LCD_SENDSTR("************");   
 }
 
 
