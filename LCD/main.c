@@ -17,7 +17,7 @@ void main()
       LCD_Init();
       LCD_SENDSTR(" Elgharib");
       LCD_Command(0xC0);		/* Go to 2nd line*/
-	LCD_SENDSTR("************");   
+      LCD_SENDSTR("************");   
 }
 
 
