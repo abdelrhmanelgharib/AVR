@@ -8,11 +8,10 @@
 #include "avr/io.h"
 #include "avr/delay.h"
 
-#include "STD_Types.h"
-#include "Bit_Math.h"
-#include "DIO_int.h"
-#include "LCD_int.h"
-
+#include "../UTIL/STD_Types.h"     
+#include "../UTIL/BIT_Math.h"
+#include "../MCAL/DIO_int.h"
+#include "../HAL/LCD_int.h"
 
 
 int main()
