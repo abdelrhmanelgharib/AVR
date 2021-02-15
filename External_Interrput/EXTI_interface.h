@@ -14,7 +14,7 @@
 #define INT1_PIN PIN27
 #define INT2_PIN PIN10
 
-void EXIT_voidInit(u8 Int_Type);
+void EXTI_voidInit(u8 Int_Type);
 
 
 /* change mode of falling- rising- low- logical change */

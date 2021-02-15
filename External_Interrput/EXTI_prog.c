@@ -12,7 +12,7 @@
 
 
 
-void EXIT_voidInit(u8 Int_Type)
+void EXTI_voidInit(u8 Int_Type)
 {
     switch (Int_Type)
     {
