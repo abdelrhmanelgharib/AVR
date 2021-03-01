@@ -9,18 +9,15 @@
 #define MCAL_SPI_SPI_INTERFACE_H_
 
 
-typedef enum
-{
-    MASTER = 0 ,
-    SLAVE ,
-}Master_slave;
 
 
+void SPI_InitSlave();
+void SPI_InitMaster();
+void SPI_ReceiveString(u8 *str);
+void SPI_SendString(u8 *str);
+u8 SPI_ReceiveByte();
+void SPI_SendByte(u8 data);
 
-void SPI_voidInitialization(Master_slave Com_type);
-void SPI_voidSendData(u8 data);
-u8 SPI_u8RecieveData(u8 data);
-u8 SPI_u8RecieveDataNoBLOCKING(u8 data);
 
 
 
